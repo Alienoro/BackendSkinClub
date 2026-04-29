@@ -1,5 +1,7 @@
 public class Skin {
 
+    private String id;
+
     private String name;
 
     private String rarity;
@@ -8,7 +10,7 @@ public class Skin {
 
     private String weaponType;
 
-    private double value;
+    private double price;
 
     public Skin() {
     }
@@ -18,7 +20,7 @@ public class Skin {
         this.rarity = rarity;
         this.wear = wear;
         this.weaponType = weaponType;
-        this.value = value;
+        this.price = value;
     }
 
     public String getName() {
@@ -53,17 +55,17 @@ public class Skin {
         this.weaponType = weaponType;
     }
 
-    public double getValue() {
-        return value;
+    public double getPrice() {
+        return price;
     }
 
-    public void setValue(double value) {
-        this.value = value;
+    public void setPrice(double value) {
+        this.price = value;
     }
 
     @Override
     public String toString() {
         return "Skin [name=" + name + ", rarity=" + rarity + ", wear=" + wear + ", weaponType=" + weaponType
-                + ", value=" + value + "]";
+                + ", value=" + price + "]";
     }
 }
