@@ -1,23 +1,30 @@
+package se.yrgo.domain;
+
+import jakarta.persistence.*;
+import se.yrgo.domain.Skin;
+
 import java.util.List;
 
+@Entity
 public class PlayerInventory {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.UUID)
     private String id;
 
     private String playerName;
 
+    @OneToMany(mappedBy = "inventory", cascade = CascadeType.ALL)
     private List<Skin> skins;
 
     private double value;
 
-    public PlayerInventory() {
+    public String getPlayerName() {
+        return playerName;
     }
 
-    public PlayerInventory(String id, String playerName, List<Skin> skins, double value) {
-        this.id = id;
+    public void setPlayerName(String playerName) {
         this.playerName = playerName;
-        this.skins = skins;
-        this.value = value;
     }
 
     public String getId() {
@@ -26,14 +33,6 @@ public class PlayerInventory {
 
     public void setId(String id) {
         this.id = id;
-    }
-
-    public String getPlayerName() {
-        return playerName;
-    }
-
-    public void setPlayerName(String playerName) {
-        this.playerName = playerName;
     }
 
     public List<Skin> getSkins() {

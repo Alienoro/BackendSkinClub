@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b4dfd059-0884-4302-9ef1-79cc5696a4de" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/se/yrgo/client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yrgo/client/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/yrgo/dataaccess/InventoryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yrgo/dataaccess/PlayerInventoryDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/se/yrgo/domain/Loadout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yrgo/domain/Loadout.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/yrgo/domain/PlayerInventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yrgo/domain/PlayerInventory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/se/yrgo/domain/Skin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yrgo/domain/Skin.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -14,8 +18,18 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
@@ -42,6 +56,17 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -58,7 +83,9 @@
       <option name="presentableId" value="Default" />
       <updated>1777451548653</updated>
       <workItem from="1777451549950" duration="1726000" />
-      <workItem from="1777970256565" duration="744000" />
+      <workItem from="1777970256565" duration="2971000" />
+      <workItem from="1777973285801" duration="72000" />
+      <workItem from="1777984563747" duration="3279000" />
     </task>
     <servers />
   </component>

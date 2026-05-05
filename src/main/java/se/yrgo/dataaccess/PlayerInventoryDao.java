@@ -1,8 +1,10 @@
-package main.java.se.yrgo.dataaccess;
+package se.yrgo.dataaccess;
+
+import se.yrgo.domain.Skin;
 
 import java.util.List;
 
-public interface InventoryDao {
+public interface PlayerInventoryDao {
 
     public void addSkin(Skin newSkin);
 
