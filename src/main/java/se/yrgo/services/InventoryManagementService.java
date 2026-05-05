@@ -1,4 +1,8 @@
-package main.java.se.yrgo.services;
+package se.yrgo.services;
+
+import java.util.List;
+
+import se.yrgo.domain.Skin;
 
 public interface InventoryManagementService {
 
