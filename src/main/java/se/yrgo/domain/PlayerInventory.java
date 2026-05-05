@@ -19,35 +19,5 @@ public class PlayerInventory {
 
     private double value;
 
-    public String getPlayerName() {
-        return playerName;
-    }
-
-    public void setPlayerName(String playerName) {
-        this.playerName = playerName;
-    }
-
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
-
-    public List<Skin> getSkins() {
-        return skins;
-    }
-
-    public void setSkins(List<Skin> skins) {
-        this.skins = skins;
-    }
-
-    public double getValue() {
-        return value;
-    }
-
-    public void setValue(double value) {
-        this.value = value;
-    }
+    // constructors, getters, setters
 }
