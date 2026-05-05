@@ -1,3 +1,5 @@
+package se.yrgo.domain;
+
 public class Skin {
 
     private String id;

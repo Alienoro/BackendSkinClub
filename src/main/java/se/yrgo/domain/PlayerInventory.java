@@ -1,3 +1,5 @@
+package se.yrgo.domain;
+
 import java.util.List;
 
 public class PlayerInventory {
