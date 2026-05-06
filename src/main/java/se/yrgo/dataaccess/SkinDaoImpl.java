@@ -2,27 +2,31 @@ package se.yrgo.dataaccess;
 
 import java.util.List;
 
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.PersistenceContext;
 import se.yrgo.domain.Skin;
 
 public class SkinDaoImpl implements SkinDao {
 
+    @PersistenceContext
+    private EntityManager em;
+
     @Override
     public void addSkin(Skin skin) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'addSkin'");
+        em.persist(skin);
     }
 
     @Override
     public Skin findById(Long id) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'findById'");
+        return em.createQuery("select s from Skin as s where s.id = :id", Skin.class)
+                .setParameter("id", id)
+                .getSingleResult();
     }
 
     @Override
     public List<Skin> findAvailableSkins() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'findAvailableSkins'");
+        return em.createQuery("select s from Skin as s where s.inventory is null", Skin.class)
+                .getResultList();
     }
 
-    
 }
