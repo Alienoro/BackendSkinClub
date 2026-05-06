@@ -13,11 +13,11 @@ public class Loadout {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private String id;
 
-    @ManyToOne
+    @OneToOne
     @JoinColumn(name = "inventory_id", nullable = false)
     private PlayerInventory playerInventory;
 
-    @ManyToMany
+    @OneToMany
     @JoinTable(
             name = "loadout_skins",
             joinColumns = @JoinColumn(name = "loadout_id"),
