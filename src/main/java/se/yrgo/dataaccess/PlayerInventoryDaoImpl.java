@@ -31,13 +31,14 @@ public class PlayerInventoryDaoImpl implements PlayerInventoryDao {
 
     @Override
     public List<Skin> findSkinsByName(String name) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'findSkinsByName'");
+        return em.createQuery("select skins from PlayerInventory as skins where skins.name = :name", Skin.class)
+                .setParameter("name", name)
+                .getResultList();
     }
 
     @Override
     public List<Skin> getAllSkins() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getAllSkins'");
+        return em.createQuery("select skins from PlayerInventory as skins", Skin.class)
+                .getResultList();
     }
 }
