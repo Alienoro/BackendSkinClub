@@ -1,3 +1,5 @@
+package se.yrgo.domain;
+
 import jakarta.persistence.*;
 import se.yrgo.domain.PlayerInventory;
 
@@ -8,7 +10,7 @@ import java.util.List;
 public class Loadout {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.UUID)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private String id;
 
     @ManyToOne
@@ -41,5 +43,32 @@ public class Loadout {
         skins.remove(skin);
     }
 
-    // getters & setters
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public PlayerInventory getPlayerInventory() {
+        return playerInventory;
+    }
+
+    public void setPlayerInventory(PlayerInventory playerInventory) {
+        this.playerInventory = playerInventory;
+    }
+
+    public List<Skin> getSkins() {
+        return skins;
+    }
+
+    public void setSkins(List<Skin> skins) {
+        this.skins = skins;
+    }
+
+    @Override
+    public String toString() {
+        return "Loadout [id=" + id + ", skins=" + skins + "]";
+    }
 }
