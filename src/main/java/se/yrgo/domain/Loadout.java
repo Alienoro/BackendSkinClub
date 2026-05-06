@@ -10,7 +10,7 @@ import java.util.List;
 public class Loadout {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private String id;
 
     @ManyToOne
