@@ -5,7 +5,6 @@ import java.util.List;
 import se.yrgo.dataaccess.SkinDao;
 import se.yrgo.domain.Skin;
 
-
 public class SkinManagementServiceImpl implements SkinManagementService {
     private SkinDao dao;
 
@@ -21,6 +20,6 @@ public class SkinManagementServiceImpl implements SkinManagementService {
 
     @Override
     public List<Skin> findAvailableSkins() {
-       return dao.findAvailableSkins();
+        return dao.findAvailableSkins();
     }
 }

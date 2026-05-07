@@ -28,5 +28,4 @@ public class SkinDaoImpl implements SkinDao {
         return em.createQuery("select s from Skin as s where s.inventory is null", Skin.class)
                 .getResultList();
     }
-
 }
