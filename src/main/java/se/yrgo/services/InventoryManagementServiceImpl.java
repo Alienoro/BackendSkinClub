@@ -2,9 +2,12 @@ package se.yrgo.services;
 
 import java.util.List;
 
+import org.springframework.stereotype.Service;
+
 import se.yrgo.dataaccess.PlayerInventoryDao;
 import se.yrgo.domain.Skin;
 
+@Service
 public class InventoryManagementServiceImpl implements InventoryManagementService {
     private PlayerInventoryDao dao;
 

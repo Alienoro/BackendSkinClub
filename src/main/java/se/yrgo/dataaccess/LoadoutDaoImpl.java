@@ -8,6 +8,10 @@ import se.yrgo.domain.Skin;
 
 import java.util.List;
 
+import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
+
+@Repository
 public class LoadoutDaoImpl implements LoadoutDao {
     PlayerInventoryDaoImpl playerInventory;
 

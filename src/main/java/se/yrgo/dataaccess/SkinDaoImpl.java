@@ -2,10 +2,13 @@ package se.yrgo.dataaccess;
 
 import java.util.List;
 
+import org.springframework.stereotype.Repository;
+
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
 import se.yrgo.domain.Skin;
 
+@Repository
 public class SkinDaoImpl implements SkinDao {
 
     @PersistenceContext
